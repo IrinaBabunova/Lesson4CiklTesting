@@ -57,8 +57,7 @@ public class Main {
         /** Простое число это такое число, которое не делится ни на какое другое число нацело.
          Написать программу, которая будет определять простое число в переменной или нет. */
 
-
-        int simpleNumber=27;
+        /**   int simpleNumber=27;
         int ind=2;
         boolean simple=false;
         while (ind<simpleNumber) {
@@ -68,7 +67,20 @@ public class Main {
             } ind++; }
         if (!simple) {
             System.out.println(simpleNumber + " - Простое число");
-        } else System.out.println(simpleNumber + " - Составное число");
+        } else System.out.println(simpleNumber + " - Составное число");*/
+
+        int simpleNumber=5;
+        int ind=2;
+        boolean simple=false;
+        while (ind<simpleNumber) {
+            if (simpleNumber % ind == 0) {
+                simple = true;
+                break;
+            } ind++;
+        }
+        if (simple) {
+            System.out.println(simpleNumber + " - Составное число");
+        } else System.out.println(simpleNumber + " - Простое число");
 
 
         System.out.println("Запасы гречки");
