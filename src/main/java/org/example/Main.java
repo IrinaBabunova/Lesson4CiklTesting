@@ -50,7 +50,6 @@ public class Main {
                 continue;
             } if (number % 5 == 0) {
                 System.out.println(number + ": buzz");
-                continue;
             }// System.out.println(number + ":");
         }
 
@@ -92,7 +91,6 @@ public class Main {
 
          while (buckwheatStock>=0) {
              costAllKilogramOneMonth=buckwheatStock*costOneKilogram;
-             //System.out.println(costAllKilogramOneMonth);
              sumCostForAllMonths=sumCostForAllMonths+costAllKilogramOneMonth;
              buckwheatStock=buckwheatStock-foodEaten;
          }
